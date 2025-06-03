@@ -8,9 +8,9 @@ use App\Http\Controllers\BlogController ;
 // import java.io;
 
 // System.out.print();
-// Disini pakai ::
 
-Route::get('/', function () { // internal controller
+
+Route::get('/', function () { 
     return view('welcome');
 });
 
@@ -19,11 +19,22 @@ Route::get('halo', function () {
 });
 
 Route::get('blog', function () {
-	return view('blog'); // tidak ada underline karena belum ada filenya
+	return view('blog'); 
 });
 
-Route::get('hello', [Link::class, 'helloword']); // menggunakan controller
+Route::get('hello', [Link::class, 'helloword']); 
 
 //ihiihih
 
+
+Route::get('dosen', [Link::class, 'index']);
+
+Route::get('/pegawai/{nama}', [Pegawai2Controller::class, 'index']);
+Route::get('/formulir', [Pegawai2Controller::class, 'formulir']);
+Route::post('/formulir/proses', [Pegawai2Controller::class, 'proses']);
+
+// route blog
+Route::get('/blog',  [BlogController::class, 'home']);
+Route::get('/blog/tentang', [BlogController::class, 'tentang']);
+Route::get('/blog/kontak', [BlogController::class, 'kontak']);
 
