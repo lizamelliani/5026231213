@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!DOCTYPE html>More actions
 <html lang="en">
 
 <head>
-    <title>5026231213 : Haliza Putri Amelliani</title>
+    <title>Haliza Putri Amelliani : 5026231213</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -27,19 +27,20 @@
     <nav class="navbar navbar-expand-sm bg-light">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">All Front End</a>
+                <a class="nav-link" href="/frontend">All Front End</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/pegawai">Pegawai</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Tugas CRUD</a>
+                <a class="nav-link" href="/penghapus">Tugas CRUD</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">EAS</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Latihan 1</a>
+                <a class="nav-link" href="/keranjangbelanja">Latihan 1</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Latihan 2</a>
