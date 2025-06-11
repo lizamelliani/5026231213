@@ -47,8 +47,10 @@ Route::get('/pegawai/edit/{id}', [PegawaiController::class,'edit'] );
 Route::post('/pegawai/update', [PegawaiController::class,'update'] );
 Route::get('/pegawai/hapus/{id}', [PegawaiController::class,'hapus'] );
 
+
 Route::get('/keranjang', [BelanjaController::class, 'index']);
 Route::get('/keranjang/tambah', [BelanjaController::class, 'tambah']);
 Route::post('/keranjang/store', [BelanjaController::class, 'store']);
 Route::get('/keranjang/hapus/{id}', [BelanjaController::class, 'hapus']);
 Route::get('/keranjang/cari', [BelanjaController::class, 'cari']);
+

@@ -39,7 +39,6 @@
                 <a class="nav-link" href="#">EAS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Latihan 1</a>
                 <a class="nav-link" href="/keranjangbelanja">Latihan 1</a>
             </li>
             <li class="nav-item">

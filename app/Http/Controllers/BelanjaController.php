@@ -4,16 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+;   
 
 class BelanjaController extends Controller
 {
-public function index()
+    // Tampilkan data keranjang
+    public function index()
     {
         // Mengambil semua data dari tabel keranjangbelanja
-        $belanja = DB::table('keranjangbelanja')->paginate(10);
+        $keranjang = DB::table('keranjangbelanja')->paginate(10);
 
-        // Mengirim ke view index
-        return view('belanja.shopee', ['keranjangbelanja' => $keranjang]);
+        // Mengirim ke view
+        return view('belanja.shopee', ['keranjang' => $keranjang]);
     }
 
     // Tampilkan form tambah
@@ -47,9 +50,9 @@ public function index()
         $cari = $request->cari;
 
         $keranjang = DB::table('keranjangbelanja')
-            ->where('KodeBarang', 'like', "%".$cari."%")
+            ->where('KodeBarang', 'like', "%" . $cari . "%")
             ->paginate();
 
-        return view('keranjang.index', ['keranjang' => $keranjang, 'cari' => $cari]);
+        return view('belanja.shopee', ['keranjang' => $keranjang, 'cari' => $cari]);
     }
 }

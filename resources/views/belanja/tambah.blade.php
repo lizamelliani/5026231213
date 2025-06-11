@@ -4,12 +4,12 @@
 @section('content')
 	<h3>Tambah Pembelian</h3>
 
-	<a href="/keranjangbelanja" class="btn btn-info"> Kembali</a>
+	<a href="/shopee" class="btn btn-info"> Kembali</a>
 
 	<br/>
 	<br/>
 
-	<form action="/keranjangbelanja/beli" method="post">
+	<form action="/keranjang/store" method="post">
 		{{ csrf_field() }}
         <div class="row">
             <div class="col-3">
