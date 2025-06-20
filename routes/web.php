@@ -6,6 +6,7 @@ use App\Http\Controllers\PegawaiController ;
 use App\Http\Controllers\Pegawai2Controller ;
 use App\Http\Controllers\BlogController ;
 use App\Http\Controllers\BelanjaController;
+use App\Http\Controllers\easController;
 // import java.io;
 
 // System.out.print();
@@ -54,3 +55,7 @@ Route::post('/keranjang/store', [BelanjaController::class, 'store']);
 Route::get('/keranjang/hapus/{id}', [BelanjaController::class, 'hapus']);
 Route::get('/keranjang/cari', [BelanjaController::class, 'cari']);
 
+Route::get('/eas', [easController::class, 'index']);
+Route::get('/eas/tambah/{data}', [easController::class, 'tambah']);
+Route::get('/eas/hapus/{data}', [easController::class, 'hapus']);
+Route::get('/eas/cari', [easController::class, 'cari']);
